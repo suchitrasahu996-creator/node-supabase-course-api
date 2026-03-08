@@ -1,4 +1,4 @@
-const supabase =require('./configs/supabase.Client')
+import  supabase from './configs/supabase.Client'
 
 async function checkDatabaseConnection(){
     try{
@@ -13,4 +13,4 @@ async function checkDatabaseConnection(){
     return false;
     }
 }
-module.exports =checkDatabaseConnection
+export default checkDatabaseConnection
