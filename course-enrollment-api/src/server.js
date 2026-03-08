@@ -6,7 +6,7 @@ const app = express();
 const PORT=process.env.PORT || 4678;
 
 app.use ('/course', courses) 
-
+app.use (logger)
 (async ()=>{
     const isDbConnected = await checkDatabaseConnection();
     if (!isDbConnected){
